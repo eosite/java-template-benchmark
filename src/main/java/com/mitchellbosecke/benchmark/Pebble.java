@@ -1,14 +1,16 @@
 package com.mitchellbosecke.benchmark;
 
-import com.mitchellbosecke.pebble.PebbleEngine;
-import com.mitchellbosecke.pebble.error.PebbleException;
-import com.mitchellbosecke.pebble.template.PebbleTemplate;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Setup;
-
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Map;
+
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Setup;
+
+import com.mitchellbosecke.pebble.PebbleEngine;
+import com.mitchellbosecke.pebble.error.PebbleException;
+import com.mitchellbosecke.pebble.extension.escaper.EscaperExtension;
+import com.mitchellbosecke.pebble.template.PebbleTemplate;
 
 public class Pebble extends BaseBenchmark {
 

@@ -10,6 +10,7 @@ JMH benchmark for popular Java template engines:
 * [Thymeleaf](http://www.thymeleaf.org/)
 * [Trimou](http://trimou.org/)
 * [Velocity](http://velocity.apache.org/)
+* [Handlebars](https://github.com/jknack/handlebars.java)
 
 Running the benchmark
 ======================
@@ -38,5 +39,15 @@ Generally, the score represents the number of templates rendered per second; the
 
 Example Results
 ===============
+
+Benchmark              Mode  Cnt      Score      Error  Units
+Freemarker.benchmark  thrpt   50  15465.934 ¡À  109.077  ops/s
+Handlebars.benchmark  thrpt   50  18328.406 ¡À  167.017  ops/s
+Mustache.benchmark    thrpt   50  20249.895 ¡À  130.870  ops/s
+Pebble.benchmark      thrpt   50  29893.615 ¡À 2796.921  ops/s
+Rocker.benchmark      thrpt   50  36271.924 ¡À 1381.414  ops/s
+Thymeleaf.benchmark   thrpt   50   5528.424 ¡À   48.179  ops/s
+Trimou.benchmark      thrpt   50  23275.702 ¡À  461.930  ops/s
+Velocity.benchmark    thrpt   50  19737.960 ¡À  242.007  ops/s
 
 ![Template Comparison](results.png)
