@@ -4,13 +4,13 @@ template-benchmark
 JMH benchmark for popular Java template engines:
 
 * [Freemarker](http://freemarker.org/)
+* [Handlebars](https://github.com/jknack/handlebars.java)
 * [Mustache](https://github.com/spullara/mustache.java)
 * [Pebble](http://www.mitchellbosecke.com/pebble)
 * [Rocker](https://github.com/fizzed/rocker)
 * [Thymeleaf](http://www.thymeleaf.org/)
 * [Trimou](http://trimou.org/)
 * [Velocity](http://velocity.apache.org/)
-* [Handlebars](https://github.com/jknack/handlebars.java)
 
 Running the benchmark
 ======================
@@ -40,7 +40,7 @@ Generally, the score represents the number of templates rendered per second; the
 Example Results
 ===============
 
-* Benchmark              Mode  Cnt      Score      Error  Units
+Benchmark              Mode  Cnt      Score      Error  Units
 * Freemarker.benchmark  thrpt   50  15465.934 ¡À  109.077  ops/s
 * Handlebars.benchmark  thrpt   50  18328.406 ¡À  167.017  ops/s
 * Mustache.benchmark    thrpt   50  20249.895 ¡À  130.870  ops/s
